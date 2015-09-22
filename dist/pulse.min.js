@@ -1,5 +1,5 @@
 /*! Pulse v1.1.0
- // alpha version 1.0
+ // alpha version 1.0 
  // MIT Licensed http://opensource.org/licenses/MIT
  */
 
