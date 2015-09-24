@@ -20,7 +20,9 @@ queue.push(function(){
 For firing all of the funtions inside the Pulse queue, it's done using the built in dispatch function:
 ```
 queue.dispatch();
+
 // Or if you want a callback function to fire when the queue is emptied
+
 queue.dispatch(function(){
   console.log('All done!');
 });
