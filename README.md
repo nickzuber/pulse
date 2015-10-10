@@ -25,5 +25,9 @@ queue.dispatch();
 
 queue.dispatch(function(){
   console.log('All done!');
-});
+}, false);
+
+// Or if you want to reverse the order in which the queue fires
+
+queue.dispatch(null, true);
 ```
