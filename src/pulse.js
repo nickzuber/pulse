@@ -5,7 +5,7 @@
 
 (function(){
 
-    /*
+    /**
      * Initialize Pulse object as a queue, initializing its bag (which will be holding the queued functions)
      * as an empty array, and sets the delay in milliseconds as either the parameter of type int or defaults 
      * the delay to zero. The delay will act as the timing between the functions in the bag firing.
@@ -18,7 +18,7 @@
       return;
     };
 
-    /*
+    /**
      * Load in functions to push to the back of the queue. Wrap the function in another function in order to
      * control the firing and callback functions in the future when the user decides to start executing the
      * functions. We need this wrapping and callback method in order to properly fire the subsquent function
@@ -50,14 +50,15 @@
       return;
     };
 
-    /*
+    /**
      * This is where the event is dispatched which signals the Pulse object to begin executing its functions.
      * This function takes two parameters; a function that is to execute once the dispatch has finished, and
      * a boolean value that determines if the order of the bag of functions is to be flipped or not. The function
      * returns true if the function successfully fired every function and false if it was not able to. The functions
      * fire synchronously, waiting for the previous function to complete before moving onto the next, and also waiting
      * the additional time that the object's delay is set at.
-     * @param {function, boolean}
+     * @param {function}
+     * @param {boolean}
      * @return {boolean}
      */
     pulse.prototype.dispatch = function dispatch(_callback, flipOrder){
