@@ -5,21 +5,17 @@
     <body>
         <p>Tests being run in the console.</p>
         <script type="text/javascript">
-            var p = new needle.bst();
-            var output = [];
-
-            p.add(p.root, 'e');
-            p.add(p.root, 'c');
-            p.add(p.root, 'd');
-            p.add(p.root, 'b');
-            p.add(p.root, 'a');
-
-            console.log(p);
-
-            p.inorderTraverse(p.root, output);
-            output.map(function(node){
-                console.log(node);
+            var q = new Pulse(100);
+            q.push(function(){
+                console.log('event 1');
             });
+            q.push(function(){
+                console.log('event 2');
+            });
+            q.push(function(){
+                console.log('event 3');
+            });
+            q.dispatch(true);
     </script>
     </body>
 </html>
