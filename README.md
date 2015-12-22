@@ -32,3 +32,8 @@ queue.dispatch(function(){
 
 queue.dispatch(null, true);
 ```
+
+## License
+[MIT](https://opensource.org/licenses/MIT)
+
+Copyright (c) 2015 Nick Zuber
