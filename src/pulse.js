@@ -61,9 +61,9 @@
      * @param {boolean}
      * @return {boolean}
      */
-    pulse.prototype.dispatch = function dispatch(_callback, flipOrder){
-      // If the _callback parameter is undefined, just set it to null and ignore
-      typeof _callback==='undefined'?_callback=null:0;
+    pulse.prototype.dispatch = function dispatch(callback, flipOrder){
+      // If the callback parameter is undefined, just set it to null and ignore
+      typeof callback==='undefined'?callback=null:0;
       
       // If the flipOrder parameter is undefiner, just assume the user does not want the bag order flipped
       // and set it to false
@@ -106,8 +106,8 @@
             // callback and/or return true for success
             if(obj.bag.length<=0){
               console.warn('Finished executing dispatch.');
-              if(typeof _callback === 'function'){
-                _callback();
+              if(typeof callback === 'function'){
+                callback();
                 return true;
               }
               else{
