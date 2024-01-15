@@ -4,7 +4,7 @@ Pulse.js is a standalone JavaScript function queue object that is mainly used to
 Pulse.js is mainly used for animation queuing, but can easily be adapted to any other synchronous function firing systems.
 
 ## Installation
-Simply include the jaz production file on your webpage (preferably all webpages).
+Simply include the pulse production file on your webpage (preferably all webpages).
 ```html
 <!-- Include pulse.min.js with relative path -->
 <script type="text/javascript" src="scripts/pulse.min.js"></script>
